@@ -4,58 +4,59 @@
     box-sizing: border-box;
     font-family: 'Roboto', Arial, sans-serif;
 }
-
-.header {
-    display: flex;
-    background-color: #1F2937;
-    padding: 1rem;
-    display: flex;
-    align-items: center;
-}
-.headerlogo {
-    font-size: 1.5rem;
-    font-weight: bold;
-    color: #F9FAF8;
-    margin-right: 2rem;
-}
-.navbar {
-    color: #F9FAF8;
-    background-color: #1F2937;
-    padding: 1rem;
-}
-
-.navbar ul {
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
-    display: flex;
-}
-
-.navbar li {
-    margin-right: 1rem;
-}
-
-.navbar a {
-    text-decoration: none;
-    color: #F9FAF8;
-}
-.heromain {
-    display: flex;
-    background-color: #1F2937;
-    height: 400px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-.herosecondary {
-    background-color: #F3F4F6;
-    height: 300px;
-    display: flex;
-    justify-content: center;
-    align-items: center;        
-    font-size: 1.5rem;
+.body {
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
     color: #1F2937;
 }
+/* --- ENCABEZADO Y HERO (SECCIÓN OSCURA) --- */
+.hero-section {
+    background-color: #1f2937;
+    color: #f9faf8;
+    padding: 16px 15% 100px 15%;
+}
+.headerlogo {
+    font-size: 24px;
+    font-weight: bold;
+    color: #f9faf8;
+}
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 80px;
+}
+.nav-links {
+  display: flex;
+  list-style: none;
+  gap: 24px;
+}
+.nav-links a {
+    color: #e5e7eb;
+    text-decoration: none;
+    font-size: 18px;
+}
+.hero-content {
+   display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 48px;
+}
+.hero-text {
+    flex:1;
+}
+
+.hero-text h1 {
+    font-size: 48px;
+    font-weight: 800;
+    line-height: 1.1;
+    margin-bottom: 12px;
+}   
+.hero-text p {
+    font-size: 18px;
+    line-height: 1.5;
+    margin-bottom: 24px;
+}
+
 .call2action {
     background-color: #D1D5DB;
     height: 200px;
@@ -74,42 +75,121 @@
     font-size: 1.2rem;
     color: #F9FAF8;
 }
-.mainleft {
-    height: 300px;
-    justify-content: center;
-    align-items: center;
-    font-size: 1.5rem;
-    color: #F9FAF8;
-    background-color: #1F2937;
-}
-.mainright {
-    height: 300px;          
-    justify-content: center;
-    align-items: center;
-    color: #F9FAF8;
-    background-color: #1F2937;
-}
-.maintitle {          
-    display: flex;
-    font-size: 1.5rem;
-}
-.maincontent {          
-    display: flex;
-    font-size: 0.8rem;
-}
 .signupbtn  {
-    background-color: #3B82F6;
-    color: #F9FAF8;
-    padding: 0.5rem 1rem;
+    background-color: #3882f6;
+    color: #ffffff;
     border: none;
-    border-radius: 0.25rem;
+    padding: 8px 32px;
+    border-radius: 8px;
+    font-weight: bold;
+    font-size: 16px;
     cursor: pointer;
 }
-.placeholder {
-    background-color: darkgray;
-    height: 100px;          
+.hero-placeholder {
+    flex: 1;
+    background-color: #6d7280;
+    height: 240px;
     display: flex;
     justify-content: center;
     align-items: center;
-    color: whitesmoke;
+    color: #f9faf8;
+    text-align: center;
+    padding: 20px;
 }   
+.sectionquote  {
+    background-color: #e5e7eb;
+    padding: 100px 20%;
+    display: flex;
+    flex-direction: column;
+}
+.quotetext {
+    font-size: 36px;
+    font-style: italic;
+    font-weight: 300;
+    color: #1f2937;
+    line-height: 1.2;
+}   
+.quotesign {
+
+    font-size: 24px;
+    font-weight: bold;
+    text-align: right;
+    margin-top: 16px;
+}
+.sectioninfo {
+    padding: 60px 15% 100px 15%;
+    text-align: center;
+}
+.sectioninfo h2 {
+    font-size: 36px;
+    font-weight: 800;
+    color: #1F2937;
+    margin-bottom: 48px;
+}
+.card-gallery {
+    display: flex;
+    justify-content: center;
+    gap: 48px;
+    flex-wrap: wrap;
+}
+.card {
+    max-width: 160px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 8px;
+}
+.card-frame {
+    width: 160px;
+    height: 160px;
+    border-radius: 16px;
+    border: 4px solid #3882f6;
+}
+.card p {
+    font-size: 14px;
+    color: #4b5563;
+}
+/* --- SECCIÓN CALL TO ACTION --- */
+.sectioncta {
+  padding: 100px 15%;
+  display: flex;
+  justify-content: center;
+}
+
+.ctabanner {
+  background-color: #3882f6;
+  color: #ffffff;
+  width: 100%;
+  padding: 48px 80px;
+  border-radius: 8px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.ctatext h3 {
+  font-size: 22px;
+  margin-bottom: 4px;
+}
+
+.ctatext p {
+  color: #e5e7eb;
+}
+.signupbtn2 {
+  background-color: transparent;
+  color: #ffffff;
+  border: 2px solid #ffffff;
+  padding: 8px 32px;
+  border-radius: 8px;
+  font-weight: bold;
+  font-size: 16px;
+  cursor: pointer;
+}
+/* --- PIE DE PÁGINA --- */
+.footer {
+  background-color: #1f2937;
+  color: #f9faf8;
+  text-align: center;
+  padding: 32px;
+  font-size: 16px;
+}
